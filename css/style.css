@@ -146,6 +146,7 @@ body {
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 .our-benefits {
 	display: inline-block;
@@ -164,33 +165,50 @@ body {
 	line-height: 1.16;
 	letter-spacing: 0.03em;
 	color: #212121;
+	margin-bottom: 50px;
 }
 
 .what-we-do {
 	display: inline-block;
 	margin-bottom: 94px;
 }
+
+.team {
+	display: inline-block;
+}
 .our-team-item {
+	display: inline;
 	background-color: var(--our-team-background-color);
 }
+
 .team .title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.16;
 	letter-spacing: 0.03em;
+	padding-top: 94px;
+	padding-bottom: 50px;
 }
+
 .our-team {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.18;
 	letter-spacing: 0.03em;
 }
-
+.our-team {
+	display: block;
+	margin-bottom: 10px;
+}
+.our-team-item .team-img {
+	margin-bottom: 30px;
+}
 .about-position {
 	font-size: 16px;
 	line-height: 1.18;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
+	margin-bottom: 30px;
 }
 
 /* -----------PORTFOLIO------------*/
@@ -235,7 +253,11 @@ body {
 
 /* -----------FOOTER------------*/
 .footer {
+	display: flex;
 	background-color: var(--second-background);
+	margin-bottom: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 
 .logo-footer {
@@ -255,6 +277,7 @@ body {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--second-text-color);
+	margin-bottom: 9px;
 }
 .footer-contacts-list {
 	font-style: normal;
@@ -262,6 +285,10 @@ body {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
+	margin-bottom: 9px;
+}
+.footer-contact-item {
+	margin-bottom: 9px;
 }
 
 .footer-contacts-list :hover,
