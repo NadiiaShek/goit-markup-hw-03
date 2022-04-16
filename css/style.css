@@ -58,7 +58,6 @@ img {
 /* -----------HEADER------------*/
 .header {
 	display: flex;
-	border-bottom: var(--border-style);
 }
 
 .header-logo {
@@ -78,7 +77,7 @@ img {
 
 .header-list {
 	display: flex;
-	padding: 22px 200px 22px 93px;
+	padding: 32px 200px 32px 93px;
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -86,6 +85,7 @@ img {
 .header-item {
 	display: flex;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-right: 50px;
 }
 
@@ -109,8 +109,8 @@ img {
 .contacts-list {
 	display: flex;
 	align-items: center;
-	padding-top: 22px;
-	padding-bottom: 22px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -121,6 +121,8 @@ img {
 }
 .contacts-group {
 	display: flex;
+	border-bottom: var(--border-style);
+	margin-bottom: 5px;
 }
 .contact-list-item {
 	display: flex;
@@ -269,6 +271,10 @@ img {
 .our-team-item {
 	flex-basis: calc(100% / 4 - 30px);
 	margin-left: 30px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+
 	background-color: var(--body-background-color);
 }
 
@@ -286,12 +292,12 @@ img {
 
 /* -----------PORTFOLIO------------*/
 .portfolio-content {
-	padding-bottom: 140px;
+	padding-bottom: 94px;
 }
 
 .btn-portfolio-list {
 	display: flex;
-	padding: 48px 270px 34px 276px;
+	padding: 43px 270px 34px 276px;
 }
 .btn-portfolio-item {
 	display: flex;
@@ -335,24 +341,25 @@ img {
 	flex-basis: calc(100% / 3 - 30px);
 	margin-left: 24px;
 	margin-bottom: 30px;
+}
+
+.porfolio-border {
+	padding: 20px 24px;
 	border-bottom: var(--border-style);
 	border-left: var(--border-style);
 	border-right: var(--border-style);
 }
-
 .portfolio-list .title {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	padding-top: 20px;
 	padding-bottom: 4px;
 }
 .portfolio-list .text {
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.03em;
-	padding-bottom: 20px;
 	color: var(--main-text-color);
 }
 
@@ -393,7 +400,7 @@ img {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
-	padding-bottom: 9px;
+	padding-bottom: 60px;
 }
 .footer-contact-item {
 	padding-bottom: 9px;
