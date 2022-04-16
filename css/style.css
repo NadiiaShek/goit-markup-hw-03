@@ -52,6 +52,7 @@ body {
 img {
 	display: block;
 }
+
 /* -----------HEADER------------*/
 
 .header-logo {
@@ -76,7 +77,6 @@ img {
 
 .header {
 	display: flex;
-	flex-direction: row;
 	justify-content: start;
 }
 
@@ -155,7 +155,6 @@ img {
 /* -----------MAIN------------*/
 .benefits-list {
 	display: flex;
-	flex-direction: row;
 }
 .benefits-list .title {
 	font-weight: 700;
@@ -180,8 +179,12 @@ img {
 
 .about-list {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	margin-left: -30px;
+}
+
+.about-item {
+	flex-basis: calc(100% / 3 - 30px);
+	margin-left: 30px;
 }
 .what-we-do .title {
 	font-weight: 700;
@@ -202,10 +205,6 @@ img {
 	display: inline-block;
 	background-color: #f5f4fa;
 	padding-bottom: 94px;
-}
-.our-team-item {
-	display: inline-block;
-	background-color: var(--body-background-color);
 }
 
 .team .title {
@@ -231,9 +230,14 @@ img {
 }
 .our-team-list {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	margin-left: -30px;
 }
+.our-team-item {
+	flex-basis: calc(100% / 4 - 30px);
+	margin-left: 30px;
+	background-color: var(--body-background-color);
+}
+
 .our-team-item .team-img {
 	margin-bottom: 30px;
 }
@@ -289,7 +293,12 @@ img {
 
 .portfolio-list {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-left: -30px;
+}
+.item-portfolio {
+	flex-basis: calc(100% / 9 - 30px);
+	margin-left: 30px;
 }
 
 .portfolio-list .title {
