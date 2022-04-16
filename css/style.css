@@ -55,6 +55,7 @@ img {
 /* -----------HEADER------------*/
 
 .header-logo {
+	display: block;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
@@ -71,6 +72,12 @@ img {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
 }
 
 .list .link-decoration:hover,
@@ -127,14 +134,19 @@ img {
 	border-radius: 4px;
 }
 
+.btn-hero {
+	padding-bottom: 205px;
+}
 .hero .button {
-	display: inline-block;
+	display: flex;
+	flex-direction: center;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	border-style: none;
 	padding: 10px 32px;
-	margin-bottom: 205px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .hero .button:hover,
 .hero .button:focus {
@@ -276,11 +288,12 @@ img {
 
 /* -----------FOOTER------------*/
 .footer {
-	display: flex;
+	display: block;
 	background-color: var(--second-background);
 	margin-bottom: 20px;
 	margin-right: 0px;
 	margin-left: 0px;
+	padding-top: 60px;
 }
 
 .logo-footer {
@@ -291,6 +304,7 @@ img {
 	letter-spacing: 0.03em;
 	color: var(--second-text-color);
 }
+
 .span {
 	color: var(--logo-part-color);
 }
@@ -300,7 +314,7 @@ img {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--second-text-color);
-	margin-bottom: 9px;
+	padding-bottom: 9px;
 }
 .footer-contacts-list {
 	font-style: normal;
@@ -311,7 +325,7 @@ img {
 	margin-bottom: 9px;
 }
 .footer-contact-item {
-	margin-bottom: 9px;
+	padding-bottom: 9px;
 }
 
 .footer-contacts-list :hover,
