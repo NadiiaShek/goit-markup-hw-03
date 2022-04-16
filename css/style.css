@@ -32,11 +32,10 @@ body {
 }
 
 .conteiner {
-	width: 1170px;
+	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
-	outline: 2px solid tomato;
 }
 
 .visually-hidden {
@@ -51,33 +50,51 @@ body {
 }
 img {
 	display: block;
+	width: 100%;
+	height: auto;
 }
 
 /* -----------HEADER------------*/
+.header {
+	display: flex;
+	border-bottom: 1px solid #ececec;
+}
 
 .header-logo {
-	display: block;
+	display: flex;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.9;
 	letter-spacing: 0.03em;
 	color: #000000;
+	padding-top: 24px;
+	padding-bottom: 25px;
 }
 .span {
 	color: var(--logo-part-color);
 }
 
+.header-list {
+	display: flex;
+	padding: 22px 200px 22px 93px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.header-item {
+	display: flex;
+	padding-top: 10px;
+	margin-right: 50px;
+}
+
 .header-navigation {
+	display: flex;
+	align-items: baseline;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-}
-
-.header {
-	display: flex;
-	justify-content: start;
 }
 
 .list .link-decoration:hover,
@@ -89,12 +106,28 @@ img {
 }
 
 .contacts-list {
+	display: flex;
+	align-items: center;
+	padding-top: 22px;
+	padding-bottom: 22px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--contact-list-color);
+	margin-left: 0;
+	margin-right: 0;
 }
+.contacts-group {
+	display: flex;
+}
+.contact-list-item {
+	display: flex;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 50px;
+}
+
 .contacts-list :hover,
 .contacts-list:focus {
 	color: var(--focus-hover-color);
@@ -104,7 +137,6 @@ img {
 .hero {
 	color: var(--second-text-color);
 	background-color: var(--second-background);
-	margin-bottom: 89px;
 }
 
 .hero .title {
@@ -165,7 +197,8 @@ img {
 	margin-bottom: 10px;
 }
 .our-benefits {
-	margin-bottom: 94px;
+	padding-top: 89px;
+	padding-bottom: 94px;
 }
 .benefits-list .text {
 	font-size: 14px;
@@ -193,12 +226,12 @@ img {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: #212121;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .what-we-do {
 	display: inline-block;
-	margin-bottom: 94px;
+	padding-bottom: 94px;
 }
 
 .team {
@@ -226,7 +259,7 @@ img {
 }
 .our-team {
 	display: block;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
 .our-team-list {
 	display: flex;
@@ -239,7 +272,7 @@ img {
 }
 
 .our-team-item .team-img {
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 }
 .about-position {
 	font-size: 16px;
@@ -247,21 +280,21 @@ img {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 /* -----------PORTFOLIO------------*/
 .portfolio-content {
-	margin-bottom: 140px;
+	padding-bottom: 140px;
 }
 
 .btn-portfolio-list {
 	display: flex;
-	flex-direction: center;
-	justify-content: center;
-	max-width: 611px;
-	padding-top: 48px;
-	padding-bottom: 34px;
+	padding: 48px 270px 34px 276px;
+}
+.btn-portfolio-item {
+	display: flex;
+	margin-left: 8px;
 }
 
 .filtr-portfolio .button-portfolio {
@@ -295,10 +328,12 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -30px;
+	margin-bottom: -30px;
 }
 .item-portfolio {
-	flex-basis: calc(100% / 9 - 30px);
+	flex-basis: calc(100% / 3 - 30px);
 	margin-left: 30px;
+	margin-bottom: 30px;
 }
 
 .portfolio-list .title {
@@ -325,6 +360,7 @@ img {
 	margin-right: 0px;
 	margin-left: 0px;
 	padding-top: 60px;
+	padding-left: 53px;
 }
 
 .logo-footer {
@@ -353,7 +389,7 @@ img {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
-	margin-bottom: 9px;
+	padding-bottom: 9px;
 }
 .footer-contact-item {
 	padding-bottom: 9px;
