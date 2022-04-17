@@ -205,6 +205,14 @@ img {
 .benefits-list {
 	display: flex;
 }
+.benefits-list-item {
+	flex-basis: calc(100% / 4 - 30px);
+}
+
+.benefits-list-item:not(:last-child) {
+	margin-right: 30px;
+}
+
 .benefits-list .title {
 	padding-bottom: 10px;
 
@@ -223,9 +231,6 @@ img {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
-}
-.benefits-list-item {
-	max-width: 270px;
 }
 
 .about-list {
