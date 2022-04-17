@@ -57,18 +57,17 @@ img {
 }
 
 /* -----------HEADER------------*/
+
 .contacts-group {
 	display: flex;
-	margin-bottom: 5px;
 	margin-left: auto;
-	border-bottom: var(--border-style);
 }
 
-.header-logo {
+.contacts-group .header-logo {
 	display: flex;
 	align-items: center;
 	padding-top: 24px;
-	padding-bottom: 25px;
+	padding-bottom: 24px;
 	margin-right: 93px;
 
 	font-family: "Raleway", sans-serif;
@@ -82,28 +81,21 @@ img {
 	color: var(--logo-part-color);
 }
 
-.group1 {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 22px;
-	padding-bottom: 22px;
-	margin-left: 0;
-	margin-right: 0;
+.link-decoration {
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
+
 .header-item:not(:last-child) {
 	margin-right: 50px;
-}
-.group2 {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 22px;
-	padding-bottom: 22px;
-	margin-left: auto;
 }
 
 .header-list {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .header-navigation {
@@ -113,9 +105,8 @@ img {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
-.link-decoration {
-	padding-top: 10px;
-	padding-bottom: 10px;
+.header {
+	border-bottom: var(--border-style);
 }
 
 .list .link-decoration:hover,
@@ -128,8 +119,10 @@ img {
 
 .contacts-list {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	margin-left: auto;
+	margin-right: 0;
 
 	font-weight: 500;
 	font-size: 14px;
@@ -140,6 +133,7 @@ img {
 
 .contact-list-item:not(:last-child) {
 	margin-right: 50px;
+	margin-left: auto;
 }
 
 .contact-list-item {
@@ -152,24 +146,26 @@ img {
 
 /* -----------HERO------------*/
 .hero {
+	padding-top: 200px;
+	padding-bottom: 200px;
 	color: var(--second-text-color);
 	background-color: var(--second-background);
 }
 
 .hero .title {
+	display: block;
+	text-align: center;
+	max-width: 706px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-}
-.hero .title {
-	display: inline-block;
-	max-width: 706px;
-	padding: 200px 227px 30px 227px;
-	margin-left: 0;
-	margin-right: 0;
 }
 
 .hero .button {
@@ -183,9 +179,6 @@ img {
 	border-radius: 4px;
 }
 
-.btn-hero {
-	padding-bottom: 205px;
-}
 .hero .button {
 	display: flex;
 	flex-direction: center;
@@ -206,7 +199,7 @@ img {
 	display: flex;
 }
 .benefits-list-item {
-	flex-basis: calc(100% / 4 - 30px);
+	flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
 .benefits-list-item:not(:last-child) {
@@ -214,7 +207,7 @@ img {
 }
 
 .benefits-list .title {
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 
 	font-weight: 700;
 	font-size: 14px;
